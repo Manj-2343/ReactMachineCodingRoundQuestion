@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
 
-const star = () => {
+const Star = () => {
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
   return (
@@ -9,7 +9,7 @@ const star = () => {
       {[...Array(5)].map((_, i) => {
         const currentRating = i + 1;
         return (
-          <div key={i}>
+          <label key={i}>
             <input
               type="radio"
               name="rating"
@@ -24,7 +24,7 @@ const star = () => {
               onMouseEnter={() => setHover(currentRating)}
               onMouseLeave={() => setHover(0)}
             />
-          </div>
+          </label>
         );
       })}
       <h1 className="uppercase text-xl mt-3">Your Rating is {rating}</h1>
@@ -32,4 +32,4 @@ const star = () => {
   );
 };
 
-export default star;
+export default Star;

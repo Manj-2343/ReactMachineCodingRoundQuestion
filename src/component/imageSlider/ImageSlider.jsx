@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const ImageSlider = ({ url, limit }) => {
   const [images, setImages] = useState([]);

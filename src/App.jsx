@@ -9,6 +9,7 @@ import LoadMore from "./component/LoadMore/LoadMore";
 import RecursiveMenu from "./component/recursiveMenu/RecursiveMenu";
 import { NavigationData } from "./component/recursiveMenu/navigationData";
 import QrCodeGenerator from "./component/qrcodeGenerator/QrCodeGenerator";
+import LightDarkMode from "./component/light-dark-mode/LightDarkMode";
 
 const App = () => {
   return (
@@ -22,7 +23,8 @@ const App = () => {
       {/* <LoadMore /> */}
       {/* treeview component/menuUIcomponent/recursive navigation */}
       {/* <RecursiveMenu menus={NavigationData} /> */}
-      <QrCodeGenerator />
+      {/* <QrCodeGenerator /> */}
+      <LightDarkMode />
     </div>
   );
 };

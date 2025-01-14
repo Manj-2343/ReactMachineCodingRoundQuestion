@@ -8,6 +8,7 @@ import ImageSliderEx from "./component/imageSlider/ImageSliderEx";
 import LoadMore from "./component/LoadMore/LoadMore";
 import RecursiveMenu from "./component/recursiveMenu/RecursiveMenu";
 import { NavigationData } from "./component/recursiveMenu/navigationData";
+import QrCodeGenerator from "./component/qrcodeGenerator/QrCodeGenerator";
 
 const App = () => {
   return (
@@ -20,7 +21,8 @@ const App = () => {
       {/* <ImageSliderEx url={"https://picsum.photos/v2/list"} limit={10} /> */}
       {/* <LoadMore /> */}
       {/* treeview component/menuUIcomponent/recursive navigation */}
-      <RecursiveMenu menus={NavigationData} />
+      {/* <RecursiveMenu menus={NavigationData} /> */}
+      <QrCodeGenerator />
     </div>
   );
 };

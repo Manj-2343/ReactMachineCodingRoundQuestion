@@ -31,6 +31,7 @@ const LoadMore = () => {
       setDisable(true);
     }
   }, [products]);
+
   if (loading) {
     return <div>Loading...</div>;
   }

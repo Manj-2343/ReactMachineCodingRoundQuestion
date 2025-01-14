@@ -10,6 +10,7 @@ import RecursiveMenu from "./component/recursiveMenu/RecursiveMenu";
 import { NavigationData } from "./component/recursiveMenu/navigationData";
 import QrCodeGenerator from "./component/qrcodeGenerator/QrCodeGenerator";
 import LightDarkMode from "./component/light-dark-mode/LightDarkMode";
+import CustomScrollIndicator from "./component/customScrollIndicator/CustomScrollIndicator";
 
 const App = () => {
   return (
@@ -24,7 +25,8 @@ const App = () => {
       {/* treeview component/menuUIcomponent/recursive navigation */}
       {/* <RecursiveMenu menus={NavigationData} /> */}
       {/* <QrCodeGenerator /> */}
-      <LightDarkMode />
+      {/* <LightDarkMode /> */}
+      <CustomScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
     </div>
   );
 };

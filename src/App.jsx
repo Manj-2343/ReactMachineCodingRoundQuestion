@@ -12,6 +12,7 @@ import QrCodeGenerator from "./component/qrcodeGenerator/QrCodeGenerator";
 import LightDarkMode from "./component/light-dark-mode/LightDarkMode";
 import CustomScrollIndicator from "./component/customScrollIndicator/CustomScrollIndicator";
 import TabsParent from "./component/customTabs/TabsParent";
+import CustomModalParent from "./component/customModal/CustomModalParent";
 
 const App = () => {
   return (
@@ -28,7 +29,8 @@ const App = () => {
       {/* <QrCodeGenerator /> */}
       {/* <LightDarkMode /> */}
       {/* <CustomScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
-      <TabsParent />
+      {/* <TabsParent /> */}
+      <CustomModalParent />
     </div>
   );
 };

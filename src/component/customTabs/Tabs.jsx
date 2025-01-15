@@ -15,11 +15,13 @@ const Tabs = ({ tabsContent, onChange }) => {
           <div
             key={tabItem.label}
             onClick={() => handleClick(index)}
-            className="flex flex-col w-1/12"
+            className={`flex flex-col w-1/12 ${
+              currentTabIndex === index
+                ? "text-red-600 border-b-2 border-red-600 font-medium" //active state
+                : "text-gray-500 hover:text-gray-700 border-b-2 border-transparent"
+            } `}
           >
-            <span className="mx-2 my-5 px-2 py-3 bg-red-700 text-gray-50">
-              {tabItem.label}
-            </span>
+            <span className="mx-2 my-5 px-2 py-3 ">{tabItem.label}</span>
           </div>
         ))}
       </div>
